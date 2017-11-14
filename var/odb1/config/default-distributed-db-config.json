@@ -1,0 +1,23 @@
+{
+  "autoDeploy": true,
+  "hotAlignment": false,
+  "executionMode": "undefined",
+  "readQuorum": 1,
+  "writeQuorum": 1,
+  "failureAvailableNodesLessQuorum": false,
+  "readYourWrites": true,
+  "servers": {
+    "odb1" : "master",
+    "odb2" : "master",
+    "odb3" : "replica"
+  },
+  "clusters": {
+    "internal": {
+    },
+    "index": {
+    },
+    "*": {
+      "servers": ["<NEW_NODE>"]
+    }
+  }
+}
