@@ -9,7 +9,7 @@
   "servers": {
     "odb1" : "master",
     "odb2" : "master",
-    "odb3" : "replica"
+    "odb3" : "master"
   },
   "clusters": {
     "internal": {
