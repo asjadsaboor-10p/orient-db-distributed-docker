@@ -14,7 +14,7 @@ Take a look to the compose file and to the var folder.
 Use *docker-compose*  to run the two nodes cluster
 
 ```shell
-docker-compose -f ./compose.yml up
+docker-compose  up -d
 ```
 
 Point a browser to localhost:2480, the OrientDB studio webapp of the first node is exposed.
@@ -29,8 +29,8 @@ After the new database is created, it will be replicated to the second node.
 Importing a database doesn't involve the replica system. To enable replication, restart the cluster
 
 ```shell
-docker-compose -f ./compose.yml stop
-docker-compose -f ./compose.yml start
+docker-compose  stop
+docker-compose  start
 ```
 
 The imported database will be replicated as well as each operation on it.
